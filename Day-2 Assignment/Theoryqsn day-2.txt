@@ -1,0 +1,31 @@
+3.  What is the purpose of app.use() method in express js?
+
+Ans~  The app. use() function is used to mount the specified middleware function(s) at the path that is being specified.This middleware function will be executed only when the base of the requested path matches the defined path.
+
+4.  What is the purpose of  app.method()  method in express js?	
+
+Ans~The app.method() function is used to route an HTTP request, where METHOD is the HTTP method of the request, such as GET, PUT, POST.
+
+5.  How to read data from GET request in express js?
+
+Ans~You can read data from a GET request in different ways.The most common approach is to access query parameter.example:
+                 
+var express = require('express');
+var app=express();
+app.get('/', function (req, res) {
+res.send('<p>Username: ' + req.query['first_name']+'</p><p>Lastname: '+req.query['last_name']+'</p>');
+})
+var server = app.listen(8000, function () {});
+console.log("Express Server Application is started. Browser at the URL: http://localhost:3005/");
+
+6. How to read data from POST request in express js?
+
+Ans~  The HTTP POST protocol provides a number of ways to pass information from a client to a server, with POST bodies being the most flexible and most commonly used method to send data via HTTP.
+
+7.  How to use find(), findIndex() and filter() methods on Arrays in JavaScript? 
+
+Ans~  find() method : Returns the value of the first element that passes a test.It takes two arguments:value and index.
+
+findIndex() : The index of the  first element that passes a test.
+
+filter():It creates a new array filled with elements that pass a test provided by a function.
