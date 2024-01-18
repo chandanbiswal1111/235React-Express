@@ -1,0 +1,36 @@
+1. What are the request methods in http?
+
+Answer~ There are nine http request methods:-
+      
+               a.GET
+               b.POST
+               c.PUT
+               d.DELETE
+               e.PATCH
+               f.HEAD
+               g.OPTIONS
+               h.TRACE
+               i.CONNECT
+
+2. Find the out the difference between GET and POST methods?
+
+Answers~ GET:-      (i)GET is used to request data from a specified resource.
+                    (ii)GET requests should never be used when dealing with sensitive data .
+                    (iii)GET carries request parameter appended in URL string.
+                    (iv)GET method request can be saved as bookmark in browser.
+                    (v)In GET method only ASCII characters are allowed.
+                    (vi)Request made through GET method are stored in Browser history.
+                    (vii)GET request is comparatively less secure.  
+
+        POST:-       (i)POST is used to send data to a server to create/update a resource.
+                     (ii)GET requests should be used when dealing with sensitive data.
+                     (iii) POST carries request parameter in message body.
+                     (iv)POST method request can not be saved as bookmark in browser.
+                     (v)In POST method all types of data is allowed.
+                     (vi)Request made through POST method is not stored in Browser history.
+                     (vii)POST request is comparatively more secure.
+
+3. How to send the files as response in express js?
+
+Answers~   We can send files as response in express js is res.sendFile() method.
+      
