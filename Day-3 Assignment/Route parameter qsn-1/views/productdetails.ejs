@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <style>
+        div
+        {
+           border:1px solid gray; 
+           border-top-width: 20px; 
+           padding:5px; 
+           width:500px; 
+           border-radius:10px;
+           margin-bottom: 10px;
+        }
+
+        div h3
+        {
+           color:white; 
+           text-align:center; 
+           margin: 0px; 
+           margin-top: -25px;
+        }
+    </style>   
+</head>
+
+<body>
+    
+    <div>
+        <h3>Selected Products Details</h3>
+        Product Id  :   <%=productObj.pid%>    <br/>
+        Product Name :   <%=productObj.pname%>    <br/>
+        Product Price  :   <%=productObj.price%>    <br/>  
+        Quantity  :   <%=productObj.quantity%>    <br/> 
+        Catagory :   <%=productObj.catagory%>    <br/>       
+    </div>
+
+    <hr/>
+    <a href="/">Back to Home</a>    |
+    <a href="/prdts/AllProducts">Back to All Products</a>
+     
+</body>
+
+</html>
